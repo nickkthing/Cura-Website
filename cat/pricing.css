@@ -1,0 +1,527 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* General styles for the navigation bar */
+/* nav {
+    justify-content: space-between;
+} */
+
+/* Logo styling */
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+/* Navigation links styling */
+/* nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} */
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+    background-color: transparent; 
+    border: none; 
+    padding: 0; 
+    box-shadow: none;
+}
+
+nav ul li a:hover {
+    color: #4CAF50; 
+}
+
+/* Dropdown menu styling */
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+nav ul li .dropdown a {
+    display: block;
+    padding: 10px 15px;
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav ul li .dropdown a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Contact Us button styling */
+nav .contact-button {
+    background-color: #2E402A; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s;
+}
+
+nav .contact-button:hover {
+    background-color: #4CAF50; 
+}
+
+/* Fixed navbar styling */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+/* Styles for the cards section */
+#cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#cards div {
+    background-color: #f5fbe9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    height: 242px;
+    text-align: center;
+    margin-left: 113px;
+}
+
+#cards h2 {
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+#cards a {
+    display: flex;
+    align-items: center;
+    font-family: 'Spartan', sans-serif;
+    line-height: 1.9;
+    font-size: 22px;
+    color: #333;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+#cards a i {
+    color: #4CAF50;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+#cards a strong {
+    font-weight: 700;
+    color: #333;
+}
+
+/* Add spacing between #oneline and #cards sections */
+#oneline {
+    margin-bottom: 40px; /* Add space below the section */
+}
+
+/* styling for footer */
+#footer {
+    background-color: #e0f7e0;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    text-align: left;
+    max-width: 300px;
+}
+
+.footer-logo img {
+    display: block;
+    margin: 0 auto;
+    width: 190px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    height: auto;
+}
+
+.footer-logo h3 {
+    font-size: 1.5rem;
+    color: #3b5d3b;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 1rem;
+    color: #555;
+    width: 475px;
+    line-height: 1.5;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 130px;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 2px solid #3b5d3b;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 52px;
+    margin-left: 12px;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 2px solid #3b5d3b;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-links ul {
+    list-style: none;
+    line-height: 1.8;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin: 5px 0;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+    color: #3b5d3b;
+}
+
+.footer-contact a {
+    display: flex;
+    align-items: center;
+    line-height: 1.8;
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.footer-contact a i {
+    margin-right: 10px;
+    color: #3b5d3b;
+    font-size: 1.2rem;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+#footer .footer-bottom p{
+    marign-top: 50px;
+}
+
+/* Ensure images and videos are responsive */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    /* Adjust layout for smaller screens */
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+
+/* this is for mobile screen device */
+/* ================= MOBILE RESPONSIVE (ONLY MOBILE) ================= */
+@media (max-width: 768px) {
+
+  /* Remove horizontal overflow */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Navbar spacing fix */
+  #navbar div {
+    padding: 10px 15px !important;
+  }
+
+  #navbar img {
+    margin-left: 0 !important;
+  }
+
+  #navbar nav {
+    display: none; /* hide desktop nav on mobile */
+  }
+
+  /* Title section */
+  #oneline div {
+    margin-top: 80px;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Cards layout → STACK (1 column) */
+  #cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  /* Each card */
+  #cards div {
+    width: 95% !important;
+    height: auto !important;
+    padding: 15px;
+  }
+
+  /* Heading */
+  #cards h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  /* Text lines */
+  #cards a {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  #cards a i {
+    font-size: 14px;
+  }
+
+  /* Last long note box */
+  #cards div[style] {
+    width: 95% !important;
+    font-size: 14px !important;
+    height: auto !important;
+    line-height: 1.5;
+  }
+
+}
+
+
+
+/* ================= NAVBAR FIX ================= */
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+}
+
+.logo {
+  height: 50px;
+}
+
+/* Desktop nav */
+.nav-links {
+  display: flex;
+  gap: 62px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links button {
+  background-color: #2e3b1f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 18px;
+}
+
+/* Hamburger */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #fdfaf3;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 20px;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a,
+  .nav-links button {
+    /* width: 100%; */
+    margin: 10px 0;
+  }
+
+}
+
+/* ===== FORCE HIDE ON DESKTOP ===== */
+.menu-toggle {
+  display: none !important;
+}
+
+/* ===== MOBILE ONLY ===== */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block !important;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #fdfaf3;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 20px;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+/* Add styles for mobile screens */
+@media screen and (max-width: 768px) {
+    #oneline {
+        justify-content: center;
+        margin-top: -20px;
+        width: 132%;
+        display: flex;
+        align-items: center;
+        margin-left: 8px;
+        font-size: 25px;
+        background-color: rgb(245, 242, 236);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #footer {
+        width: 126%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-logo img {
+        display: block;
+        margin: 0 auto;
+        width: 110px;
+        margin-top: -21px;
+        margin-bottom: 30px;
+        height: auto;
+    }
+}

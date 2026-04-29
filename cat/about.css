@@ -1,0 +1,1081 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* General styles for the navigation bar */
+/* nav {
+    justify-content: space-between;
+} */
+
+/* Logo styling */
+/* nav .logo {
+    display: flex;
+    align-items: center;
+} */
+
+/* nav .logo img {
+    height: 50px;
+} */
+
+/* Navigation links styling */
+/* nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} */
+
+/* nav ul li {
+    margin: 0 15px;
+    position: relative;
+} */
+
+/* nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+    background-color: transparent; 
+    border: none; 
+    padding: 0; 
+    box-shadow: none; 
+} */
+
+/* nav ul li a:hover {
+    color: #4CAF50; 
+} */
+
+/* Dropdown menu styling */
+/* nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1000;
+} */
+
+/* nav ul li:hover .dropdown {
+    display: block;
+} */
+
+/* nav ul li .dropdown a {
+    display: block;
+    padding: 10px 15px;
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+} */
+
+/* nav ul li .dropdown a:hover {
+    background-color: #f0f0f0;
+} */
+
+/* Contact Us button styling */
+/* nav .contact-button {
+    background-color: #2E402A; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s;
+} */
+
+/* nav .contact-button:hover {
+    background-color: #4CAF50; 
+} */
+
+/* Fixed navbar styling */
+/* #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+} */
+
+/* chat gpt navbar style */
+
+#navbar {
+  background-color: #fdfaf3;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: 100vw;   /* IMPORTANT */
+
+  padding: 15px 16px; /* reduce padding */
+
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo {
+  height: 50px;
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.nav-links button {
+  background-color: #2e3b1f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 18px;
+  cursor: pointer;
+}
+
+/* Hamburger */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+
+  position: absolute;
+  right: 16px;   /* FIX position */
+  top: 18px;
+
+  z-index: 2000;
+}
+
+#services {
+  background-color: #f0fff0; /* Light green background */
+  padding: 50px 0;
+}
+
+#services h2 {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#services p {
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: -30px;
+}
+
+#services div {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+#services div div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #d3d3d3;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#services button {
+  background-color: #2e402a;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#services button:hover {
+  background-color: #3a4f35;
+}
+
+#services i {
+  color: #2e402a;
+  margin-bottom: 10px;
+}
+
+#services .icon-container {
+  text-align: center;
+  margin-bottom: 20px; /* Adjusted margin for better spacing */
+  margin-top: 50px; /* Reduced top margin for better alignment */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#services .icon-container i {
+  font-size: 2rem;
+  color: #2e402a;
+  display: block;
+  margin: 0 auto;
+}
+
+#services .icon-container p {
+  font-size: 1.2rem;
+  color: #000;
+  margin-top: 10px; /* Adjusted margin to ensure proper spacing below the icons */
+}
+
+/* styling for doginfo */
+#doginfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdfaf3;
+  padding: 50px 20px;
+}
+
+.doginfo-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  gap: 80px;
+}
+
+.doginfo-container img {
+  width: 40%;
+  height: 600px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.doginfo-content {
+  width: 60%;
+  color: #333;
+  font-family: "Spartan", sans-serif;
+}
+
+.doginfo-content .badge {
+  display: inline-block;
+  background-color: #e8f5e9;
+  color: #4caf50;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.doginfo-content h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  width: 105%;
+  margin-bottom: 20px;
+}
+
+.doginfo-content h2 {
+  font-size: 1.5rem;
+  width: 145%;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.doginfo-content p {
+  font-size: 1rem; /* Default font size for desktop */
+  width: auto; /* Default width for desktop */
+}
+
+/* Specific styling for the p tag in about.html */
+.doginfo-content p {
+  font-size: 1rem; /* Default font size for desktop */
+  width: auto; /* Default width for desktop */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .doginfo-content p {
+    font-size: 12px; /* Font size for mobile */
+    width: 120%; /* Adjusted width for mobile to ensure proper visibility */
+    margin: 0 auto; /* Center the paragraph on the screen */
+    text-align: justify; /* Ensure proper alignment for readability */
+  }
+}
+
+/* Styling for the doctor section */
+#doctor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.doctor-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.doctor-container div {
+  flex: 1;
+  margin-right: 150px;
+}
+
+.doctor-container img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 160px;
+  border-radius: 10px;
+}
+
+.info {
+  text-align: left;
+  margin-top: -205px; /* Adjusted to move the info div slightly above */
+}
+
+#doctor .team {
+  margin-bottom: 0px;
+}
+
+#doctor .team-member {
+  font-family: "Spartan", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 80px;
+}
+
+/* Styling for the Team Members section */
+.team {
+  background-color: #e0f5e0; /* Light green background */
+  color: #2d5c2d; /* Dark green text */
+  font-size: 14px; /* Slightly smaller font size */
+  padding: 5px 15px; /* Reduced padding */
+  border-radius: 15px; /* Slightly smaller border radius */
+  display: inline-block;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.team h4 {
+  font-size: 1rem; /* Reduced font size */
+  font-weight: 600;
+  color: #2e3b1f;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.team h4 i {
+  color: #f4a261;
+}
+
+#doctor .info h1 {
+  font-size: 57px;
+  margin-top: 280px;
+}
+
+#doctor .info h2 {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#doctor .info p {
+  font-weight: 800;
+  color: #7e7c7c; /* Corrected 'font-color' to 'color' */
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.doctor-container .info button {
+  background-color: #2d2d2d; /* Dark background color */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for size */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.doctor-container .info button:hover {
+  background-color: #1a1a1a; /* Slightly darker on hover */
+}
+
+/* Styling for the doctor2 section */
+#doctor2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+#doctor2 .doctor-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#doctor2 .infoo {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+#doctor2 .infoo h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#doctor2 .infoo h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#doctor2 .infoo p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+#doctor2 .infoo button {
+  background-color: #2d2d2d;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#doctor2 img {
+  flex: 1;
+  max-width: 33%;
+  border-radius: 10px;
+  margin-right: 100px;
+}
+
+#doctor2 .infoo h1 {
+  font-size: 57px;
+}
+
+#doctor2 .infoo p {
+  font-weight: 800;
+  color: #7e7c7c; /* Corrected 'font-color' to 'color' */
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+/* styling for footer */
+#footer {
+  background-color: #e0f7e0;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: "Spartan", sans-serif;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  text-align: left;
+  max-width: 300px;
+}
+
+.footer-logo img {
+  display: block;
+  margin: 0 auto;
+  width: 190px;
+  margin-top: 120px;
+  margin-bottom: 30px;
+  height: auto;
+}
+
+.footer-logo h3 {
+  font-size: 1.5rem;
+  color: #3b5d3b;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 1rem;
+  color: #555;
+  width: 475px;
+  line-height: 1.5;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 130px;
+  color: #333;
+  text-transform: uppercase;
+  border-bottom: 2px solid #3b5d3b;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-links ul {
+  list-style: none;
+  line-height: 1.8;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin: 5px 0;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  margin: 5px 0;
+}
+
+.footer-contact i {
+  margin-right: 10px;
+  color: #3b5d3b;
+}
+
+.footer-contact a {
+  display: flex;
+  align-items: center;
+  line-height: 1.8;
+  text-decoration: none;
+  color: #555;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.footer-contact a i {
+  margin-right: 10px;
+  color: #3b5d3b;
+  font-size: 1.2rem;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+#footer .footer-bottom p {
+  marign-top: 50px;
+}
+
+/* Ensure images and videos are responsive */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  /* Adjust layout for smaller screens */
+  .container {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* mobile css navbar */
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+    max-width: 100vw; /* IMPORTANT */
+
+    background: #fdfaf3;
+
+    display: none;
+    flex-direction: column;
+
+    padding: 20px;
+    box-sizing: border-box;
+
+    overflow-x: hidden; /* FIX */
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a,
+  .nav-links button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+
+
+/* DESKTOP FIX */
+@media (min-width: 769px) {
+
+  .menu-toggle {
+    display: none !important;
+  }
+
+  .nav-links {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    width: auto;
+    padding: 0;
+  }
+
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .doginfo-container,
+  .doctor-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .doginfo-container img,
+  #doctor2 img {
+    width: 100%;
+    height: auto;
+    margin: 0; /* REMOVE BIG MARGINS */
+  }
+
+  .doctor-container div {
+    margin: 0; /* REMOVE BREAKING MARGIN */
+  }
+
+  .info,
+  .infoo {
+    margin: 0;
+    text-align: center;
+  }
+
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* 🔥 FORCE DESKTOP FIX */
+@media (min-width: 769px) {
+
+  .menu-toggle {
+    display: none !important;
+  }
+
+}
+
+
+/* MOBILE FIX FOR SERVICES */
+@media (max-width: 768px) {
+
+  #services {
+    padding: 30px 15px;
+  }
+
+  #services h2 {
+    font-size: 2rem;
+  }
+
+  /* GRID LAYOUT (2 per row) */
+  #services > div:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* EACH CARD */
+  #services > div:nth-of-type(2) > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* ICON BOX */
+  #services > div:nth-of-type(2) > div div {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* ICON */
+  #services i {
+    font-size: 1.5rem;
+  }
+
+  /* TEXT BELOW ICON */
+  #services p {
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 1.3;
+  }
+
+  /* BUTTON FIX */
+  #services button {
+    margin-top: 40px !important;
+    width: 80%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem; /* Adjusted font size for smaller screens */
+    text-align: center; /* Center align for better appearance on mobile */
+  }
+}
+
+/* Media query for mobile devices */
+/* doctor image */
+@media (max-width: 768px) {
+  #doctor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0; /* Adjusted margin for mobile */
+  }
+
+  .doctor-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    gap: 15px; /* Adjusted gap for better spacing */
+  }
+
+  .doctor-container img {
+    width: 80%; /* Adjusted image width for mobile */
+    height: auto;
+    margin: 0 auto; /* Center the image */
+    border-radius: 10px;
+  }
+
+  .info {
+    text-align: center; /* Center align text */
+    margin-top: 10px; /* Adjusted margin for better spacing */
+  }
+
+  #doctor .team-member {
+    font-size: 1rem; /* Adjusted font size for mobile */
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Adjust styles for #doctor .info h1 for mobile screens */
+@media (max-width: 768px) {
+    #doctor .info h1 {
+        font-size: 32px !important;
+        margin-top: 0px !important;
+    }
+}
+
+/* Adjust styles for #doctor .info h2 for mobile screens */
+@media (max-width: 768px) {
+    #doctor .info h2 {
+        font-size: 17px !important;
+        margin-top: 15px !important;
+        line-height: 1.5 !important;
+    }
+}
+
+/* Adjust styles for #doctor .info p for mobile screens */
+@media (max-width: 768px) {
+    #doctor .info p {
+        font-weight: 800 !important;
+        color: #7e7c7c !important;
+        line-height: 1.5 !important;
+        font-size: 13px !important;
+    }
+}
+
+/* Adjust styles for .doctor-container .info button for mobile screens */
+@media (max-width: 768px) {
+    .doctor-container .info button {
+        background-color: #2d2d2d !important;
+        color: white !important;
+        margin-top: 15px !important;
+        width: 45% !important;
+        border: none !important;
+        border-radius: 20px !important;
+        padding: 10px 20px !important;
+        font-size: 18px !important;
+        cursor: pointer !important;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) !important;
+        transition: background-color 0.3s ease !important;
+    }
+}
+
+/* Adjust styles for #doctor2 .infoo button for mobile screens */
+@media (max-width: 768px) {
+    #doctor2 .infoo button {
+        background-color: #2d2d2d !important;
+        color: #fff !important;
+        border: none !important;
+        border-radius: 20px !important;
+        padding: 10px 20px !important;
+        margin-left: 50px !important;
+        width: 45% !important;
+        font-size: 1rem !important;
+        cursor: pointer !important;
+    }
+}
+
+/* Adjust styles for #doctor2 .infoo h1 for mobile screens */
+@media (max-width: 768px) {
+    #doctor2 .infoo h1 {
+        font-size: 28px !important;
+        margin-right: 50px !important;
+    }
+}
+
+/* Adjust styles for the image with src="girldoctor.jpeg" to match the provided size for mobile screens */
+@media (max-width: 768px) {
+    img[src="girldoctor.jpeg"] {
+        width: 100% !important; /* Ensure the image takes full width */
+        height: auto !important; /* Maintain aspect ratio */
+        max-width: 300px !important; /* Set a larger maximum width */
+        display: block !important;
+        margin: 0 auto !important; /* Center the image */
+    }
+}
+
+/* Adjust styles for the specific h2 element for mobile screens */
+@media (max-width: 768px) {
+    h2[style*="Comfort and Care, Wrapped in Kindness"] {
+        text-align: center !important;
+        font-size: 1.5rem !important;
+        font-weight: bold !important;
+        margin-top: -8px !important;
+        margin-bottom: 50px !important;
+    }
+}
+
+/* Adjust styles for #services section for mobile screens */
+@media (max-width: 768px) {
+    #services {
+        padding: 20px;
+        text-align: center;
+    }
+
+    #services .icon-container {
+        margin-bottom: 20px;
+    }
+
+    #services .icon-container i {
+        font-size: 2rem;
+        color: #2E402A;
+        margin-bottom: 10px;
+    }
+
+    #services .icon-container p {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #555;
+    }
+
+    #services h2 {
+        text-align: center !important;
+        font-size: 1.5rem !important;
+        font-weight: bold !important;
+        margin-top: -8px !important;
+        margin-bottom: 30px !important;
+    }
+
+    #services p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    #services button {
+        background-color: #2E402A !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 20px !important;
+        padding: 15px 30px !important;
+        font-size: 1rem !important;
+        margin-top: 20px !important;
+        cursor: pointer;
+    }
+
+    #services button i {
+        margin-left: 10px;
+    }
+}
+
+/* Adjust styles for the specific button in #services for mobile screens */
+@media (max-width: 768px) {
+    #services button {
+        width: 144% !important;
+        height: 55% !important;
+        margin-left: 32px !important;
+        align-items: center !important;
+    }
+}
+
+
+/* ===== DESKTOP ONLY (769px and up) ===== */
+@media (min-width: 769px) {
+    .nav-links {
+        display: flex !important;
+        align-items: center;
+        gap: 59px !important; /* Your requested desktop gap */
+    }
+
+    /* REMOVE the margin here for desktop */
+    .nav-links button {
+        margin-right: 0 !important; 
+        width: auto !important; 
+    }
+}
+
+/* ===== MOBILE ONLY (768px and below) ===== */
+@media (max-width: 768px) {
+    /* Keep your mobile button exactly as it was */
+    .nav-links button {
+        width: 43%; 
+        margin-right: 202px; /* Keeping this because you said it's perfect for mobile */
+    }
+    
+    /* Ensure the container behaves correctly */
+    .nav-links {
+        display: none; /* Toggled by JS */
+        flex-direction: column;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
+/* ================= MOBILE ONLY (768px and below) ================= */
+@media (max-width: 768px) {
+    
+    .nav-links {
+        /* ... keep your existing position, top, and background styles ... */
+        
+        display: none; /* Hidden until hamburger is clicked */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        
+        /* THE NEW GAP YOU REQUESTED FOR MOBILE */
+        gap: 31px !important; 
+    }
+
+    /* Keep the rest of your perfect mobile styles below */
+    .nav-links.active {
+        display: flex !important;
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+</head>
+<body>
+  
+    <!-- <section id="navbar">
+    <div style="display: flex; align-items: center; justify-content: space-between; 
+    padding-top: 15px; padding-bottom: 25px;">
+        <img src="logo.webp" alt="Company Logo" style="height: 50px; margin-left: 100px;">
+        <nav style="display: flex; gap: 70px; align-items: center; margin-right: 127px;">
+            <a href="index.html" style="text-decoration: none; color: black;">Home</a>
+            <a href="about.html" style="text-decoration: none; color: black;">About Us</a>
+            <a href="pricing.html" style="text-decoration: none; color: black;">Pricing info</a>
+            <a href="#" style="text-decoration: none; color: black;">Services <i class="fa-solid fa-angle-down"></i></a>
+            <a href="#" style="text-decoration: none; color: black;">Forms <i class="fa-solid fa-angle-down"></i></a>
+            <a href="memorialproducts.html" style="text-decoration: none; color: black;">Memorials Products</a>
+            <a href="faq.html" style="text-decoration: none; color: black;">FAQs</a>
+            <button onclick="location.href='contactus.html'" style="background-color: #2f4f2f; color: white; border: none; border-radius: 20px; padding: 10px 20px; font-size: 16px; cursor: pointer; display: flex; align-items: center;">
+                Contact Us <i class="fa-solid fa-paw" style="margin-left: 8px;"></i>
+            </button>
+        </nav>
+    </div>
+    </section> -->
+
+    <section id="navbar">
+  <div class="nav-container">
+    
+    <img src="logo.webp" class="logo" alt="Company Logo">
+
+    <!-- Hamburger -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- Nav Links -->
+    <nav id="navLinks">
+      <a style="text-decoration: none; color: black;" href="index.html">Home</a>
+      <a style="text-decoration: none; color: black;" href="about.html">About Us</a>
+      <a style="text-decoration: none; color: black;" href="pricing.html">Pricing info</a>
+      <a style="text-decoration: none; color: black;" href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+      <a style="text-decoration: none; color: black;" href="#">Forms <i class="fa-solid fa-angle-down"></i></a>
+      <a style="text-decoration: none; color: black;" href="memorialproducts.html">Memorials Products</a>
+      <a style="text-decoration: none; color: black;" href="faq.html">FAQs</a>
+
+      <button onclick="location.href='contactus.html'" class="contact-btn">
+        Contact Us <i class="fa-solid fa-paw"></i>
+      </button>
+    </nav>
+
+  </div>
+</section>
+
+
+    <!-- <section id="text">
+        <div style="margin-top: 171px;">
+            <i class="fa-solid fa-paw"></i>
+            <p style="font-size: 18px;">Popular Question</p>
+        </div>
+        <div>
+            <h1 style="margin-top: -18px; font-size: 68px;">Frequently Asked Questions</h1>
+        </div>
+    </section> -->
+
+      
+    <section id="text">
+    <div class="hero-subtext">
+        <i class="fa-solid fa-paw"></i>
+        <p>Popular Question</p>
+    </div>
+    <div class="hero-title">
+        <h1>Frequently Asked Questions</h1>
+    </div>
+</section>
+
+
+    <section id="questions">
+        <div style="display: flex; gap: 20px;">
+            <div class="question">
+                <h2 onclick="toggleAnswer(this)" style="font-size: 19px;">How do I know when it’s time to consider euthanasia for my pet? <i class="fa-solid fa-plus"></i></h2>
+                <p class="answer" style="display: none;">Our veterinarians assess your pet’s comfort, mobility, and quality of life to help guide you toward a compassionate decision.</p>
+            </div>
+            <div class="question">
+                <h2 onclick="toggleAnswer(this)" style="font-size: 19px;">How can I schedule a home visit for a general exam? <i class="fa-solid fa-plus"></i></h2>
+                <p class="answer" style="display: none;">You can schedule a home visit by contacting our office directly or using our online appointment system.</p>
+            </div>
+        </div>
+        <div style="display: flex; gap: 20px;">
+            <div class="question">
+                <h2 onclick="toggleAnswer(this)" style="font-size: 19px;">What services do you offer for senior pets? <i class="fa-solid fa-plus"></i></h2>
+                <p class="answer" style="display: none;">We provide specialized care plans tailored to the needs of senior pets, including pain management and mobility support.</p>
+            </div>
+            <div class="question">
+                <h2 onclick="toggleAnswer(this)" style="font-size: 19px;">Do you offer emergency services? <i class="fa-solid fa-plus"></i></h2>
+                <p class="answer" style="display: none;">Yes, we offer 24/7 emergency services to ensure your pet receives immediate care when needed.</p>
+            </div>
+        </div>
+        <div style="display: flex; gap: 20px;">
+            <div class="question">
+                <h2 onclick="toggleAnswer(this)" style="font-size: 19px;">How can I prepare my pet for a vet visit? <i class="fa-solid fa-plus"></i></h2>
+                <p class="answer" style="display: none;">Ensure your pet is calm and comfortable, and bring any medical records or medications they are currently taking.</p>
+            </div>
+            <div class="question">
+                <h2 onclick="toggleAnswer(this)" style="font-size: 19px;">What payment methods do you accept? <i class="fa-solid fa-plus"></i></h2>
+                <p class="answer" style="display: none;">We accept cash, credit cards, and online payments for your convenience.</p>
+            </div>
+        </div>
+        <div style="display: flex; gap: 20px;">
+            <div class="question">
+                <h2 onclick="toggleAnswer(this)" style="font-size: 19px;">Can I get a second opinion on my pet’s condition? <i class="fa-solid fa-plus"></i></h2>
+                <p class="answer" style="display: none;">Absolutely, we encourage second opinions to ensure the best care for your pet.</p>
+            </div>
+            <div class="question">
+                <h2 onclick="toggleAnswer(this)" style="font-size: 19px;">Do you offer pet grooming services? <i class="fa-solid fa-plus"></i></h2>
+                <p class="answer" style="display: none;">Yes, we provide grooming services tailored to your pet’s specific needs.</p>
+            </div>
+        </div>
+        <div style="display: flex; gap: 20px;">
+            <div class="question">
+                <h2 onclick="toggleAnswer(this)" style="font-size: 19px;">What vaccinations does my pet need? <i class="fa-solid fa-plus"></i></h2>
+                <p class="answer" style="display: none;">Vaccination requirements vary by pet type and age; our team can provide a personalized vaccination schedule.</p>
+            </div>
+            <div class="question">
+                <h2 onclick="toggleAnswer(this)" style="font-size: 19px;">How do I know if my pet is in pain? <i class="fa-solid fa-plus"></i></h2>
+                <p class="answer" style="display: none;">Look for signs such as limping, changes in behavior, or vocalizations, and consult our veterinarians for an assessment.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="logo.webp" alt="Logo">
+                <p>We’re here to support families through the most delicate moments of their pet’s life. With gentle guidance and compassionate care, we ensure comfort, dignity, and peace for every beloved companion.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <a href="#"><i class="fa fa-envelope"></i> info.uwma@gmail.com</a>
+                <a href="#"><i class="fa fa-map-marker-alt"></i> Surrey, BC</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 UNTIL WE MEET AGAIN VETERINARY HOSPICE & EUTHANASIA SERVICES</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

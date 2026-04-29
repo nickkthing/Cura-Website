@@ -1,0 +1,616 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* General styles for the navigation bar */
+nav {
+    justify-content: space-between;
+}
+
+/* Logo styling */
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+/* Navigation links styling */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    box-shadow: none; /* Remove box-shadow */
+}
+
+nav ul li a:hover {
+    color: #4CAF50; /* Green color on hover */
+}
+
+/* Dropdown menu styling */
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+nav ul li .dropdown a {
+    display: block;
+    padding: 10px 15px;
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav ul li .dropdown a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Contact Us button styling */
+nav .contact-button {
+    background-color: #2E402A; /* Dark green background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s;
+}
+
+nav .contact-button:hover {
+    background-color: #4CAF50; /* Lighter green on hover */
+}
+
+/* Fixed navbar styling */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white; /* Ensures the navbar has a background when scrolling */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for better visibility */
+}
+
+/* styling for footer */
+#footer {
+    background-color: #e0f7e0;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    text-align: left;
+    max-width: 300px;
+}
+
+.footer-logo img {
+    display: block;
+    margin: 0 auto;
+    width: 190px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    height: auto;
+}
+
+.footer-logo h3 {
+    font-size: 1.5rem;
+    color: #3b5d3b;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 1rem;
+    color: #555;
+    width: 475px;
+    line-height: 1.5;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 130px;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 2px solid #3b5d3b;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-links ul {
+    list-style: none;
+    line-height: 1.8;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin: 5px 0;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+    color: #3b5d3b;
+}
+
+.footer-contact a {
+    display: flex;
+    align-items: center;
+    line-height: 1.8;
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.footer-contact a i {
+    margin-right: 10px;
+    color: #3b5d3b;
+    font-size: 1.2rem;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+#footer .footer-bottom p{
+    marign-top: 50px;
+}
+
+
+
+/* ===== DEFAULT (DESKTOP) ===== */
+
+/* hide mobile navbar on desktop */
+.mobile-nav,
+#mobileMenu {
+    display: none;
+}
+
+/* Ensure images and videos are responsive */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    /* Adjust layout for smaller screens */
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  .logo {
+    height: 45px;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  /* HIDE MENU */
+  #navLinks {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 70%;
+    background: white;
+
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+  }
+
+  /* SHOW MENU */
+  #navLinks.active {
+    display: flex;
+  }
+
+  #navLinks a {
+    width: 100%;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+  }
+
+  #navLinks button {
+    width: 100%;
+  }
+
+  /* HIDE HAMBURGER ON DESKTOP */
+}
+
+
+.hamburger {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+
+  #form > div {
+    flex-direction: column !important;
+    margin: 50px 20px !important;
+  }
+
+  #form img {
+    width: 100% !important;
+    margin: 0 0 30px 0 !important;
+  }
+
+  #form > div > div:last-child {
+    margin-left: 0 !important;
+  }
+
+  form > div {
+    flex-direction: column !important;
+  }
+
+  form button {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  #info {
+    flex-direction: column !important;
+    gap: 30px;
+  }
+
+  #info > div {
+    border: none !important;
+    padding: 0 !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo p {
+    width: 100% !important;
+  }
+
+  .footer-links h4,
+  .footer-contact h4 {
+    margin-top: 40px !important;
+  }
+}
+
+
+
+/* ===== MOBILE NAV ONLY (DO NOT TOUCH DESKTOP) ===== */
+.mobile-nav,
+#mobileMenu {
+    display: none;
+}
+
+/* MOBILE ONLY */
+@media (max-width: 768px) {
+
+    /* HIDE DESKTOP NAV COMPLETELY */
+    #navbar nav {
+        display: none !important;
+    }
+
+    #navbar img {
+        display: none !important;
+    }
+
+    /* SHOW MOBILE NAV */
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background: white;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 999;
+    }
+
+    .mobile-logo {
+        height: 45px;
+    }
+
+    .hamburger {
+        font-size: 26px;
+        cursor: pointer;
+    }
+
+    /* MOBILE MENU (HIDDEN DEFAULT) */
+    #mobileMenu {
+        position: fixed;
+        top: 70px;
+        right: 0;
+        width: 75%;
+        height: 100vh;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        transform: translateX(100%);
+        transition: 0.3s;
+        z-index: 998;
+    }
+
+    /* SHOW MENU */
+    #mobileMenu.active {
+        transform: translateX(0);
+    }
+
+    #mobileMenu a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+    }
+
+    #mobileMenu button {
+        background: #2f4f2f;
+        color: white;
+        border: none;
+        width: 40%;
+        padding: 10px;
+        border-radius: 20px;
+    }
+}
+
+
+/* ===== MOBILE ONLY ===== */
+@media (max-width: 768px) {
+
+    /* HIDE DESKTOP NAVBAR */
+    #navbar {
+        display: none;
+    }
+
+    /* SHOW MOBILE NAVBAR */
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .mobile-logo {
+        height: 45px;
+    }
+
+    .hamburger {
+        font-size: 26px;
+        cursor: pointer;
+    }
+
+    /* MENU */
+    #mobileMenu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        right: 0;
+        width: 75%;
+        height: 100vh;
+        background: white;
+        padding: 20px;
+        gap: 20px;
+
+        transform: translateX(100%);
+        transition: 0.3s;
+    }
+
+    #mobileMenu.active {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+/* ===== DESKTOP ONLY RULES ===== */
+@media (min-width: 769px) {
+    .mobile-nav, #mobileMenu {
+        display: none !important;
+    }
+    #navbar {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: white;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+}
+
+/* ===== MOBILE ONLY RULES ===== */
+@media (max-width: 768px) {
+    /* Hide Desktop Navbar */
+    #navbar {
+        display: none !important;
+    }
+
+    /* Show and Style Mobile Navbar */
+    .mobile-nav {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1001; /* Higher than other elements */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .mobile-logo {
+        height: 40px;
+    }
+
+    .hamburger {
+        display: block !important;
+        font-size: 28px;
+        color: #2f4f2f;
+        cursor: pointer;
+        
+        /* THE NEW MARGIN YOU REQUESTED */
+        margin-right: 33px; 
+    }
+
+    /* Mobile Menu Drawer */
+    #mobileMenu {
+        position: fixed;
+        top: 70px; /* Right below mobile-nav */
+        right: 0;
+        width: 89%;
+        height: 49vh;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 25px;
+        z-index: 1000;
+        transform: translateX(100%); /* Start hidden off-screen */
+        transition: 0.3s ease-in-out;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    }
+
+    #mobileMenu.active {
+        transform: translateX(0); /* Slide in */
+    }
+
+    #mobileMenu a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        font-weight: 500;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    .mobile-contact-btn {
+        background: #2f4f2f;
+        color: white;
+        border: none;
+        padding: 15px;
+        border-radius: 25px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    /* Fix Content Padding so it doesn't hide under fixed navbar */
+    #contact {
+        margin-top: 70px;
+    }
+}
+    }
+}

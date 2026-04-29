@@ -1,0 +1,573 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;   /* 🚨 THIS FIXES RIGHT SPACE */
+}
+
+/* General styles for the navigation bar */
+nav {
+    justify-content: space-between;
+}
+
+/* Logo styling */
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+/* Navigation links styling */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    box-shadow: none; /* Remove box-shadow */
+}
+
+nav ul li a:hover {
+    color: #4CAF50; /* Green color on hover */
+}
+
+/* Dropdown menu styling */
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+nav ul li .dropdown a {
+    display: block;
+    padding: 10px 15px;
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav ul li .dropdown a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Contact Us button styling */
+nav .contact-button {
+    background-color: #2E402A; /* Dark green background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s;
+}
+
+nav .contact-button:hover {
+    background-color: #4CAF50; /* Lighter green on hover */
+}
+
+/* Fixed navbar styling */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white; /* Ensures the navbar has a background when scrolling */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for better visibility */
+}
+
+#memorial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  font-size: 25px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    #memorial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 100px auto 0; /* Adjusted margin to account for navbar */
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    #navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* styling for footer */
+#footer {
+    background-color: #e0f7e0;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    text-align: left;
+    max-width: 300px;
+}
+
+.footer-logo img {
+    display: block;
+    margin: 0 auto;
+    width: 190px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    height: auto;
+}
+
+.footer-logo h3 {
+    font-size: 1.5rem;
+    color: #3b5d3b;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 1rem;
+    color: #555;
+    width: 475px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .footer-logo p {
+        font-size: 1rem;
+        color: #555;
+        width: 334px;
+        line-height: 1.5;
+    }
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 130px;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 2px solid #3b5d3b;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-links ul {
+    list-style: none;
+    line-height: 1.8;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin: 5px 0;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+    color: #3b5d3b;
+}
+
+.footer-contact a {
+    display: flex;
+    align-items: center;
+    line-height: 1.8;
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.footer-contact a i {
+    margin-right: 10px;
+    color: #3b5d3b;
+    font-size: 1.2rem;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+#footer .footer-bottom p{
+    marign-top: 50px;
+}
+
+/* Ensure images and videos are responsive */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    /* Adjust layout for smaller screens */
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+
+
+/* NAV WRAPPER (keeps desktop same) */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+}
+
+/* LOGO */
+.logo {
+    height: 50px;
+}
+
+/* NAV LINKS (desktop same look) */
+#navLinks {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+/* BUTTON */
+#navLinks button {
+    background-color: #2f4f2f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* HAMBURGER HIDDEN ON DESKTOP */
+.hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* ================= MOBILE ONLY ================= */
+@media (max-width: 768px) {
+
+    /* FIX OVERFLOW */
+    .nav-wrapper {
+        padding: 15px 20px;
+    }
+
+    /* SHOW HAMBURGER */
+    .hamburger {
+        display: block;
+    }
+
+    /* HIDE NAV */
+    #navLinks {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 75%;
+        height: 72vh;
+        background: white;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 20px;
+        display: none;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* SHOW NAV WHEN ACTIVE */
+    #navLinks.active {
+        display: flex;
+        width: 102%;
+    }
+
+    /* LINKS */
+    #navLinks a {
+        font-size: 16px;
+        width: 100%;
+        text-decoration: none;
+        color: black;
+    }
+
+    /* BUTTON FULL WIDTH */
+    #navLinks button {
+        width: 30%;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    #memorial {
+        padding: 0 20px;   /* adds left-right space */
+    }
+
+    #memorial h1 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    #memorial p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    #memorial p {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+/* Center the #memorial section horizontally on mobile devices */
+@media (max-width: 768px) {
+  #memorial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #memorial div {
+    margin: 0; /* Remove any existing margins */
+  }
+}
+
+@media (max-width: 768px) {
+
+  #memorial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  #memorial div {
+    width: 85%;              /* 👈 THIS is the main fix */
+    max-width: 400px;        /* keeps it nicely centered */
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #memorial h1 {
+    margin-top: 0 !important;   /* remove that -58px issue */
+    font-size: 24px;
+  }
+
+  #memorial p {
+    font-size: 15px !important;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+}
+
+
+/* Desktop (unchanged look) */
+.memorial-content {
+  margin-top: 90px;
+  font-size: 25px;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+
+  #memorial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .memorial-content {
+    width: 85%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .memorial-content h1 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+
+  .memorial-content p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+}
+
+/* ===== MOBILE PERFECT CENTER FIX ===== */
+@media (max-width: 768px) {
+
+  #memorial {
+    width: 100%;
+    display: flex;
+    justify-content: center;   /* center horizontally */
+  }
+
+  .memorial-content {
+    width: 80%;                /* 👈 key fix */
+    max-width: 350px;          /* keeps it centered nicely */
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .memorial-content h1 {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  .memorial-content p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #photos > div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #photos > div > div {
+    width: 45%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #photos > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  #photos > div > div {
+    width: 45%;
+    text-align: center;
+  }
+
+  #photos img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #navbar div {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  #navbar img {
+    margin-left: 0 !important;
+  }
+
+}

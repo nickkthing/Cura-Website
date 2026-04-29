@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- <section id="navbar">
+    <div style="display: flex; align-items: center; justify-content: space-between; 
+    padding-top: 15px; padding-bottom: 25px;">
+        <img src="logo.webp" alt="Company Logo" style="height: 50px; margin-left: 100px;">
+        <nav style="display: flex; gap: 70px; align-items: center; margin-right: 127px;">
+            <a href="index.html" style="text-decoration: none; color: black;">Home</a>
+            <a href="about.html" style="text-decoration: none; color: black;">About Us</a>
+            <a href="pricing.html" style="text-decoration: none; color: black;">Pricing info</a>
+            <a href="#" style="text-decoration: none; color: black;">Services <i class="fa-solid fa-angle-down"></i></a>
+            <a href="#" style="text-decoration: none; color: black;">Forms <i class="fa-solid fa-angle-down"></i></a>
+            <a href="memorialproducts.html" style="text-decoration: none; color: black;">Memorials Products</a>
+            <a href="faq.html" style="text-decoration: none; color: black;">FAQs</a>
+            <button onclick="location.href='contactus.html'" style="background-color: #2f4f2f; color: white; border: none; border-radius: 20px; padding: 10px 20px; font-size: 16px; cursor: pointer; display: flex; align-items: center;">
+                Contact Us <i class="fa-solid fa-paw" style="margin-left: 8px;"></i>
+            </button>
+        </nav>
+    </div>
+    </section> -->
+
+
+     <section id="navbar">
+        <div class="nav-container">
+
+    <img src="logo.webp" class="logo" alt="">
+
+    <!-- Hamburger -->
+    <i class="fa-solid fa-bars menu-toggle" onclick="toggleMenu()"></i>
+
+    <!-- Links -->
+    <div class="nav-links" id="navLinks" style="gap: 27px;">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="pricing.html">Pricing info</a>
+      <a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+      <a href="#">Forms <i class="fa-solid fa-angle-down"></i></a>
+      <a href="memorialproducts.html">Memorials Products</a>
+      <a href="faq.html">FAQs</a>
+      <button style="width: 43%; margin-right: 202px;" onclick="location.href='contactus.html'">
+        Contact Us <i class="fa-solid fa-paw"></i>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+    <section id="services">
+        <div class="icon-container">
+            <i class="fa-solid fa-paw"></i>
+            <p>Honoring Your Pet</p>
+        </div>
+        <h2 style="text-align: center; font-size: 3.5rem; font-weight: bold; margin-top: -8px; margin-bottom: 50px;">Our Services</h2>
+        <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+            <div style="text-align: center;">
+                <div style="width: 100px; height: 100px; border: 1px solid #d3d3d3; border-radius: 15px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    <i class="fa-solid fa-stethoscope" style="font-size: 2rem;"></i>
+                </div>
+                <p style="font-weight: bold; margin-top: 10px;">In Home Vet-service</p>
+            </div>
+            <div style="text-align: center;">
+                <div style="width: 100px; height: 100px; border: 1px solid #d3d3d3; border-radius: 15px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    <i class="fas fa-hands-holding-heart" style="font-size: 2rem;"></i>
+                </div>
+                <p style="font-weight: bold; margin-top: 10px;">Aftercare Services</p>
+            </div>
+            <div style="text-align: center;">
+                <div style="width: 100px; height: 100px; border: 1px solid #d3d3d3; border-radius: 15px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    <i class="fa-solid fa-people-carry-box" style="font-size: 2rem;"></i>
+                </div>
+                <p style="font-weight: bold; margin-top: 10px;">Hospice Care</p>
+            </div>
+            <div style="text-align: center;">
+                <div style="width: 100px; height: 100px; border: 1px solid #d3d3d3; border-radius: 15px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    <i class="fas fa-house-chimney-heart" style="font-size: 2rem;"></i>
+                </div>
+                <p style="font-weight: bold; margin-top: 10px;">In-Home Euthanasia</p>
+            </div>
+            <div style="text-align: center;">
+                <div style="width: 100px; height: 100px; border: 1px solid #d3d3d3; border-radius: 15px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    <i class="fas fa-bag-shopping" style="font-size: 2rem;"></i>
+                </div>
+                <p style="font-weight: bold; margin-top: 10px;">Memorial Product</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 30px;">
+            <button style="background-color: #2E402A; color: white; border: none; border-radius: 20px; padding: 15px 30px; font-size: 1rem; margin-top: 130px;">
+                Get in touch with us!
+            </button>
+        </div>
+    </section>
+
+    <section id="doginfo">
+        <div class="doginfo-container">
+            <img src="dog.jpg" alt="Dog Image">
+            <div class="doginfo-content">
+                <span class="badge">About Us</span>
+                <h1>Honouring Your Pet’s Life with Gentle, Heartfelt Care</h1>
+                <h2>About UNTIL WE MEET AGAIN</h2>
+                <p>Veterinary Hospice & Euthanasia Services</p>
+                <p>At Until We Meet Again, we understand that saying goodbye to a beloved pet is one of life’s hardest
+                    moments. Our compassionate team is dedicated to providing personalized care through quality-of-life
+                    evaluations, comfort-focused hospice support, general exams, and vaccinations. When needed, we offer
+                    gentle, individualized euthanasia services to guide families through difficult end-of-life
+                    decisions. Our mission is to create a peaceful, respectful environment where pets feel safe, loved,
+                    and dignified in their final moments—because every companion deserves tender care until the very
+                    end.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="doctor">
+        <div class="team">
+            <h4>Team Members</h4>
+        </div>
+        <div class="team-member">
+            <h3>Get to Know Our Amazing Team Members!</h3>
+        </div>
+        <div class="doctor-container">
+            <div>
+                <img src="doctor.jpg" alt="">
+            </div>
+            <div class="info">
+                <h1>Dr. Tejpaul Bhatia</h1>
+                <h2>Owner, Francis Petcare Hospital, Richmond, BC Founder & Previous Owner of Cypress St. Animal Hospital, Vancouver</h2>
+                <p>Meet Dr. Bhatia, a Veterinarian with a passion for delivering exceptional care, Dr. Bhatia brings over 40 years of experience in Veterinary Medicine. His areas of expertise are small animal, internal medicine, Dermatology, emergency medicine, and critical care.</p>
+                <p>A graduate of the College of Veterinary Medicine in PAU India (1986). He immigrated to Canada in 1997. With his expertise across different veterinary clinics in Alberta & Vancouver his unparalleled compassion for animals strived him to open Cypress St. Animal Hospital in 2002. While success and so many awards were thriving his way for more than 22 years, suddenly his health challenged him to take a break and retire from Cypress but his commitment and dedication brought him back in action and he started his practice once again in Richmond. Dr. Bhatia prioritizes continued education, completing 50-70 hours of professional development annually. Outside of work, he loves watching sports like Cricket, Field hockey, Ice hockey and also is a devoted follower of spiritual & religious themes.</p>
+                <button>Know More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="doctor2">
+        <div class="doctor-container">
+            <div class="infoo">
+                <h1>Reshma Gajavelli, BVSc</h1>
+                <h2>Veterinary Technician</h2>
+                <p>Reshma Gajavelli, BVSc, is a compassionate Veterinary Technician with a strong clinical foundation, earning her degree from PV Narasimha Rao Veterinary University in Hyderabad, India. She moved to Canada to continue her education and advance her career in veterinary medicine.</p>
+                <p>Reshma is known for her gentle handling, attention to detail, and client-focused care. Her interests include small-animal medicine, anesthesia, dentistry, preventive care, radiology, and client education. She values lifelong learning and is committed to providing high-quality, compassionate veterinary care.</p>
+                <button>Know More</button>
+            </div>
+            <img src="girldoctor.jpeg" alt="">
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="icon-container">
+            <i class="fa-solid fa-paw"></i>
+            <p>Comfort. Care. Compassion.</p>
+        </div>
+        <h2 style="text-align: center; font-size: 3.5rem; font-weight: bold; margin-top: -8px; margin-bottom: 50px;">Comfort and Care, Wrapped in Kindness</h2>
+        <p>In moments when things feel heavy, we provide gentle help—whether arranging hospice <br> calls or preparing a heartfelt memorial—ensuring your pet is honoured with tenderness</p>
+        <div style="text-align: center; margin-top: 30px;">
+            <button style="background-color: #2E402A; color: white; border: none; border-radius: 20px; padding: 15px 30px; font-size: 1rem; margin-top: 20px;">
+                Book Your Consultation <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="logo.webp" alt="Logo">
+                <p>We’re here to support families through the most delicate moments of their pet’s life. With gentle guidance and compassionate care, we ensure comfort, dignity, and peace for every beloved companion.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <a href="#"><i class="fa fa-envelope"></i> info.uwma@gmail.com</a>
+                <a href="#"><i class="fa fa-map-marker-alt"></i> Surrey, BC</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 UNTIL WE MEET AGAIN VETERINARY HOSPICE & EUTHANASIA SERVICES</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
